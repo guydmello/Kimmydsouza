@@ -15,8 +15,8 @@
     <div class="wrap header__inner">
       <div class="brand">KIMMY D’SOUZA</div>
 
-      <button class="navbtn" id="navBtn" aria-expanded="false" aria-controls="nav">
-        Menu
+      <button class="burger" id="navBtn" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
+        <span class="burger__lines" aria-hidden="true"></span>
       </button>
 
       <nav class="nav" id="nav" aria-label="Primary">
@@ -36,6 +36,9 @@
         <a href="https://example.com/PLACEHOLDER_YOUTUBE" target="_blank" rel="noreferrer">YouTube</a>
       </div>
     </div>
+
+    <!-- Mobile menu overlay (click outside to close) -->
+    <div class="navOverlay" id="navOverlay" hidden></div>
   </header>
 
   <main>
@@ -51,11 +54,7 @@
         </div>
 
         <div class="hero__img">
-          <img
-            src="assets/hero_main.jpg"
-            alt="Hero image (placeholder)"
-            loading="eager"
-          />
+          <img src="assets/hero_main.jpg" alt="Hero image (placeholder)" loading="eager" />
         </div>
       </div>
     </section>
@@ -79,7 +78,7 @@
       </div>
     </section>
 
-    <!-- About photo divider -->
+    <!-- Photo divider -->
     <section class="section section--image-divider" aria-label="Photo divider">
       <div class="wrap">
         <div class="divider-img">
@@ -115,9 +114,7 @@
       <div class="wrap">
         <h2 class="h1like">[FEATURED_PROJECT_HEADING]</h2>
 
-        <p class="lead">
-          [PLACEHOLDER_FEATURED_DESCRIPTION]
-        </p>
+        <p class="lead">[PLACEHOLDER_FEATURED_DESCRIPTION]</p>
 
         <p>
           <a class="btn btn--link" href="https://example.com/PLACEHOLDER_FEATURED_LINK" target="_blank" rel="noreferrer">
@@ -239,7 +236,6 @@
       <div class="wrap">
         <h2 class="h2">Contact Me!</h2>
 
-        <!-- Static hosting note: use Formspree or replace with mailto -->
         <form class="form" action="https://formspree.io/f/FORM_ID_PLACEHOLDER" method="POST">
           <div class="form__row">
             <label>
@@ -269,9 +265,10 @@
     </section>
   </main>
 
-  <footer class="footer">
-    <a href="#top">top of page</a>
-  </footer>
+  <!-- Floating back-to-top button -->
+  <button class="toTop" id="toTop" type="button" aria-label="Back to top" hidden>
+    ↑
+  </button>
 
   <script src="script.js"></script>
 </body>
