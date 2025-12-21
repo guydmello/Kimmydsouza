@@ -9,11 +9,13 @@ navBtn?.addEventListener("click", () => {
 });
 
 loadMore?.addEventListener("click", () => {
-  document.querySelectorAll(".reel--hidden").forEach(el => el.style.display = "block");
+  document.querySelectorAll(".reel--hidden").forEach(el => {
+    el.style.display = "block";
+  });
   loadMore.style.display = "none";
 });
 
-// Optional: show "Thanks for submitting!" when returning from Formspree
+// Optional: if you redirect back with #thanks after form submit
 if (window.location.hash === "#thanks") {
   if (thanks) thanks.hidden = false;
 }
