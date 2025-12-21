@@ -15,11 +15,19 @@
     <div class="wrap header__inner">
       <div class="brand">KIMMY D’SOUZA</div>
 
+      <!-- Burger always visible -->
       <button class="burger" id="navBtn" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
-        <span class="burger__lines" aria-hidden="true"></span>
+        <span class="burger__box" aria-hidden="true">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </span>
       </button>
+    </div>
 
-      <nav class="nav" id="nav" aria-label="Primary">
+    <!-- Collapsible menu panel (all resolutions) -->
+    <nav class="navPanel" id="nav" aria-label="Primary">
+      <div class="wrap navPanel__inner">
         <a href="#home">Home</a>
         <a href="#headshot">Headshot &amp; Resume</a>
         <a href="#about">About Me</a>
@@ -28,16 +36,18 @@
         <a href="#reels">Performance Reels</a>
         <a href="#follow">Follow Me</a>
         <a href="#contact">Contact</a>
-      </nav>
 
-      <div class="social">
-        <a href="https://example.com/PLACEHOLDER_TIKTOK" target="_blank" rel="noreferrer">TikTok</a>
-        <a href="https://example.com/PLACEHOLDER_INSTAGRAM" target="_blank" rel="noreferrer">Instagram</a>
-        <a href="https://example.com/PLACEHOLDER_YOUTUBE" target="_blank" rel="noreferrer">YouTube</a>
+        <div class="navPanel__divider"></div>
+
+        <div class="navPanel__social">
+          <a href="https://example.com/PLACEHOLDER_TIKTOK" target="_blank" rel="noreferrer">TikTok</a>
+          <a href="https://example.com/PLACEHOLDER_INSTAGRAM" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="https://example.com/PLACEHOLDER_YOUTUBE" target="_blank" rel="noreferrer">YouTube</a>
+        </div>
       </div>
-    </div>
+    </nav>
 
-    <!-- Mobile menu overlay (click outside to close) -->
+    <!-- overlay -->
     <div class="navOverlay" id="navOverlay" hidden></div>
   </header>
 
@@ -59,7 +69,7 @@
       </div>
     </section>
 
-    <!-- HEADSHOT & RESUME (pink panel) -->
+    <!-- HEADSHOT & RESUME -->
     <section class="section section--panel" id="headshot">
       <div class="wrap">
         <div class="kicker">Headshot and Resume</div>
@@ -113,9 +123,7 @@
     <section class="section" id="featured">
       <div class="wrap">
         <h2 class="h1like">[FEATURED_PROJECT_HEADING]</h2>
-
         <p class="lead">[PLACEHOLDER_FEATURED_DESCRIPTION]</p>
-
         <p>
           <a class="btn btn--link" href="https://example.com/PLACEHOLDER_FEATURED_LINK" target="_blank" rel="noreferrer">
             WATCH FULL CONCERT HERE!
@@ -127,11 +135,7 @@
     <!-- TEDx -->
     <section class="section" id="tedx">
       <div class="wrap">
-        <h2 class="h1like">
-          WATCH MY TEDxTALK:<br />
-          <span class="quote">"[TEDX_TALK_TITLE]"</span>
-        </h2>
-
+        <h2 class="h1like">WATCH MY TEDxTALK:<br /><span class="quote">"[TEDX_TALK_TITLE]"</span></h2>
         <div class="embed">
           <iframe
             title="TEDx talk (placeholder)"

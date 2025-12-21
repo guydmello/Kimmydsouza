@@ -1,10 +1,9 @@
 const navBtn = document.getElementById("navBtn");
-const nav = document.getElementById("nav");
+const nav = document.getElementById("nav"); // navPanel
 const navOverlay = document.getElementById("navOverlay");
 
 const loadMore = document.getElementById("loadMore");
 const thanks = document.getElementById("thanks");
-
 const toTop = document.getElementById("toTop");
 
 function openMenu() {
@@ -27,15 +26,12 @@ navBtn?.addEventListener("click", () => {
   else openMenu();
 });
 
-// Close menu if you click outside (overlay)
-navOverlay?.addEventListener("click", () => closeMenu());
+navOverlay?.addEventListener("click", closeMenu);
 
-// Close menu when clicking a nav link (mobile)
 nav?.querySelectorAll("a").forEach((a) => {
-  a.addEventListener("click", () => closeMenu());
+  a.addEventListener("click", closeMenu);
 });
 
-// Close menu with Escape
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") closeMenu();
 });
@@ -48,22 +44,15 @@ loadMore?.addEventListener("click", () => {
   loadMore.style.display = "none";
 });
 
-// Back to top button show/hide
+// Back to top show/hide
 function updateToTopVisibility() {
   if (!toTop) return;
   const y = window.scrollY || document.documentElement.scrollTop;
-  // Show after scrolling down a bit
-  if (y > 500) {
-    toTop.hidden = false;
-  } else {
-    toTop.hidden = true;
-  }
+  toTop.hidden = !(y > 500);
 }
-
 window.addEventListener("scroll", updateToTopVisibility, { passive: true });
 updateToTopVisibility();
 
-// Back to top smooth scroll
 toTop?.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
