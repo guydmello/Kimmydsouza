@@ -143,23 +143,32 @@ a:hover{ text-decoration: underline; }
   z-index: 25;
 }
 
-/* Collapsible nav panel (all resolutions) */
+/* Collapsible nav panel (ALL resolutions, reliable) */
 .navPanel{
-  display: grid;
-  grid-template-rows: 0fr;
-  transition: grid-template-rows 260ms cubic-bezier(.2,.9,.2,1);
   background: transparent;
+  overflow: hidden;
+  max-height: 0;                 /* fully collapsed */
+  transition: max-height 280ms cubic-bezier(.2,.9,.2,1);
+  border-top: 1px solid var(--line);
 }
 
 .navPanel.open{
-  grid-template-rows: 1fr;
+  max-height: 420px;             /* enough for links + social */
 }
 
+/* inner content animates separately */
 .navPanel__inner{
-  overflow: hidden;
+  padding: 0;                    /* IMPORTANT: no padding when closed */
+  opacity: 0;
+  transform: translateY(-8px);
+  transition: opacity 180ms ease, transform 220ms ease, padding 220ms ease;
   background: var(--white);
-  border-top: 1px solid var(--line);
+}
+
+.navPanel.open .navPanel__inner{
   padding: 16px 0 18px;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .navPanel__inner a{

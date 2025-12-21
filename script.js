@@ -2,10 +2,6 @@ const navBtn = document.getElementById("navBtn");
 const nav = document.getElementById("nav"); // navPanel
 const navOverlay = document.getElementById("navOverlay");
 
-const loadMore = document.getElementById("loadMore");
-const thanks = document.getElementById("thanks");
-const toTop = document.getElementById("toTop");
-
 function openMenu() {
   nav.classList.add("open");
   navBtn.classList.add("is-open");
@@ -20,7 +16,8 @@ function closeMenu() {
   navOverlay.hidden = true;
 }
 
-navBtn?.addEventListener("click", () => {
+navBtn?.addEventListener("click", (e) => {
+  e.preventDefault();
   const isOpen = nav.classList.contains("open");
   if (isOpen) closeMenu();
   else openMenu();
