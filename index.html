@@ -4,25 +4,271 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Kimmy D’Souza</title>
-  <style>
-    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 0; padding: 64px 20px; background: #0b0b0f; color: #f2f2f2; }
-    .wrap { max-width: 900px; margin: 0 auto; }
-    h1 { font-size: 42px; margin: 0 0 12px; }
-    p { font-size: 18px; line-height: 1.6; opacity: 0.9; }
-    a { color: #9ad5ff; text-decoration: none; border-bottom: 1px solid rgba(154,213,255,.35); }
-    a:hover { border-bottom-color: rgba(154,213,255,.9); }
-    .card { margin-top: 28px; padding: 18px 20px; border: 1px solid rgba(255,255,255,.12); border-radius: 14px; background: rgba(255,255,255,.04); }
-  </style>
+  <meta name="description" content="actor - singer - dancer" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
-  <div class="wrap">
-    <h1>Kimmy D’Souza</h1>
-    <p>Welcome to my site. Portfolio + updates coming soon.</p>
 
-    <div class="card">
-      <p><strong>Contact:</strong> <a href="mailto:hello@yourdomain.com">hello@yourdomain.com</a></p>
-      <p><strong>Links:</strong> <a href="#">Instagram</a> · <a href="#">LinkedIn</a> · <a href="#">Resume</a></p>
+<body>
+  <header class="header" id="top">
+    <div class="wrap header__inner">
+      <div class="brand">KIMMY D’SOUZA</div>
+
+      <button class="navbtn" id="navBtn" aria-expanded="false" aria-controls="nav">
+        Menu
+      </button>
+
+      <nav class="nav" id="nav" aria-label="Primary">
+        <a href="#home">Home</a>
+        <a href="#headshot">Headshot &amp; Resume</a>
+        <a href="#about">About Me</a>
+        <a href="#featured">[FEATURED_PROJECT_TITLE]</a>
+        <a href="#tedx">TEDxTalk</a>
+        <a href="#reels">Performance Reels</a>
+        <a href="#follow">Follow Me</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="social">
+        <a href="https://example.com/PLACEHOLDER_TIKTOK" target="_blank" rel="noreferrer" aria-label="TikTok">TikTok</a>
+        <a href="https://example.com/PLACEHOLDER_INSTAGRAM" target="_blank" rel="noreferrer" aria-label="Instagram">Instagram</a>
+        <a href="https://example.com/PLACEHOLDER_YOUTUBE" target="_blank" rel="noreferrer" aria-label="YouTube">YouTube</a>
+      </div>
     </div>
-  </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="section hero" id="home">
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <h1 class="hero__name">
+            Kimmy<br />
+            D’Souza
+          </h1>
+          <div class="hero__tag">actor - singer - dancer</div>
+        </div>
+
+        <div class="hero__img">
+          <img
+            src="assets/hero_main.jpg"
+            alt="Hero image (placeholder)"
+            loading="eager"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- HEADSHOT & RESUME -->
+    <section class="section" id="headshot">
+      <div class="wrap">
+        <div class="kicker">Headshot and Resume</div>
+        <h2 class="h2">HEADSHOT &amp; RESUME</h2>
+
+        <div class="hsr">
+          <div class="hsr__img">
+            <img src="assets/headshot.png" alt="Headshot (placeholder)" loading="lazy" />
+          </div>
+
+          <div class="hsr__actions">
+            <a class="btn" href="assets/headshot.png" download>Download headshot</a>
+            <a class="btn" href="assets/resume.pdf" download>Download resume</a>
+          </div>
+        </div>
+
+        <div class="divider-img">
+          <img src="assets/about_photo.jpg" alt="Section divider image (placeholder)" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="wrap">
+        <div class="kicker">My Story</div>
+        <h2 class="h2">ABOUT ME</h2>
+
+        <div class="prose">
+          <p>
+            [PLACEHOLDER_ABOUT_PARAGRAPH_1]
+          </p>
+          <p>
+            [PLACEHOLDER_ABOUT_PARAGRAPH_2]
+          </p>
+          <p>
+            [PLACEHOLDER_ABOUT_PARAGRAPH_3]
+          </p>
+        </div>
+
+        <a class="followlink" href="#follow">Follow Me!</a>
+
+        <div class="divider-img">
+          <img src="assets/follow_photo.jpg" alt="About section image (placeholder)" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECT -->
+    <section class="section" id="featured">
+      <div class="wrap">
+        <h2 class="h1like">[FEATURED_PROJECT_HEADING]</h2>
+
+        <p class="lead">
+          [PLACEHOLDER_FEATURED_DESCRIPTION]
+        </p>
+
+        <p>
+          <a class="btn btn--link" href="https://example.com/PLACEHOLDER_FEATURED_LINK" target="_blank" rel="noreferrer">
+            WATCH FULL CONCERT HERE!
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <!-- TEDx -->
+    <section class="section" id="tedx">
+      <div class="wrap">
+        <h2 class="h1like">WATCH MY TEDxTALK:<br /><span class="quote">"[TEDX_TALK_TITLE]"</span></h2>
+
+        <div class="embed">
+          <iframe
+            title="TEDx talk (placeholder)"
+            src="https://www.youtube.com/embed/VIDEO_ID_PLACEHOLDER"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- REELS -->
+    <section class="section" id="reels">
+      <div class="wrap">
+        <div class="kicker">My Life</div>
+        <h2 class="h2">PERFORMANCE REELS</h2>
+
+        <div class="reels" id="reelsGrid" aria-label="Performance reels grid">
+          <!-- Visible items -->
+          <a class="reel" href="https://example.com/PLACEHOLDER_REEL_1" target="_blank" rel="noreferrer">
+            <div class="reel__title">[REEL_TITLE_1]</div>
+            <div class="reel__meta">[REEL_META_1]</div>
+          </a>
+
+          <a class="reel" href="https://example.com/PLACEHOLDER_REEL_2" target="_blank" rel="noreferrer">
+            <div class="reel__title">[REEL_TITLE_2]</div>
+            <div class="reel__meta">[REEL_META_2]</div>
+          </a>
+
+          <a class="reel" href="https://example.com/PLACEHOLDER_REEL_3" target="_blank" rel="noreferrer">
+            <div class="reel__title">[REEL_TITLE_3]</div>
+            <div class="reel__meta">[REEL_META_3]</div>
+          </a>
+
+          <!-- Hidden until Load More -->
+          <a class="reel reel--hidden" href="https://example.com/PLACEHOLDER_REEL_4" target="_blank" rel="noreferrer">
+            <div class="reel__title">[REEL_TITLE_4]</div>
+            <div class="reel__meta">[REEL_META_4]</div>
+          </a>
+
+          <a class="reel reel--hidden" href="https://example.com/PLACEHOLDER_REEL_5" target="_blank" rel="noreferrer">
+            <div class="reel__title">[REEL_TITLE_5]</div>
+            <div class="reel__meta">[REEL_META_5]</div>
+          </a>
+
+          <a class="reel reel--hidden" href="https://example.com/PLACEHOLDER_REEL_6" target="_blank" rel="noreferrer">
+            <div class="reel__title">[REEL_TITLE_6]</div>
+            <div class="reel__meta">[REEL_META_6]</div>
+          </a>
+        </div>
+
+        <div class="center">
+          <button class="btn" id="loadMore" type="button">LOAD MORE</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOLLOW -->
+    <section class="section" id="follow">
+      <div class="wrap">
+        <h2 class="h2">FOLLOW ME!</h2>
+
+        <div class="followcards">
+          <a class="card" href="https://example.com/PLACEHOLDER_INSTAGRAM" target="_blank" rel="noreferrer">
+            <div class="card__title">Instagram</div>
+            <div class="card__meta">[PLACEHOLDER_HANDLE]</div>
+          </a>
+          <a class="card" href="https://example.com/PLACEHOLDER_TIKTOK" target="_blank" rel="noreferrer">
+            <div class="card__title">TikTok</div>
+            <div class="card__meta">[PLACEHOLDER_HANDLE]</div>
+          </a>
+          <a class="card" href="https://example.com/PLACEHOLDER_YOUTUBE" target="_blank" rel="noreferrer">
+            <div class="card__title">YouTube</div>
+            <div class="card__meta">[PLACEHOLDER_CHANNEL]</div>
+          </a>
+        </div>
+
+        <div class="contactblock">
+          <div class="contactblock__col">
+            <div class="contactblock__label">THEATRE/TV/FILM:</div>
+            <div class="contactblock__text">
+              <strong>[AGENCY_NAME]</strong><br />
+              o: [AGENCY_PHONE]<br />
+              [AGENCY_ADDRESS_LINE_1]<br />
+              [AGENCY_ADDRESS_LINE_2]<br />
+              <a href="mailto:AGENT_EMAIL_PLACEHOLDER">AGENT_EMAIL_PLACEHOLDER</a>
+            </div>
+          </div>
+
+          <div class="contactblock__col">
+            <div class="contactblock__label">SOCIAL MEDIA INQUIRIES:</div>
+            <div class="contactblock__text">
+              [DIGITAL_TEAM_NAME]<br />
+              <a href="mailto:DIGITAL_EMAIL_PLACEHOLDER">DIGITAL_EMAIL_PLACEHOLDER</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="wrap">
+        <h2 class="h2">Contact Me!</h2>
+
+        <!-- GitHub Pages is static. Use Formspree or replace with mailto. -->
+        <form class="form" action="https://formspree.io/f/FORM_ID_PLACEHOLDER" method="POST">
+          <div class="form__row">
+            <label>
+              <span>First Name</span>
+              <input name="firstName" placeholder="First Name" required />
+            </label>
+            <label>
+              <span>Last Name</span>
+              <input name="lastName" placeholder="Last Name" required />
+            </label>
+          </div>
+
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" placeholder="Email" required />
+          </label>
+
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="6" placeholder="Message" required></textarea>
+          </label>
+
+          <button class="btn" type="submit">Send</button>
+          <div class="form__thanks" id="thanks" hidden>Thanks for submitting!</div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#top">top of page</a>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
