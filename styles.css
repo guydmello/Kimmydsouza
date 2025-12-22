@@ -70,6 +70,22 @@ a:hover{ text-decoration: underline; }
 }
 
 .brand{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand__logo{
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+}
+
+.brand__logo{
+  filter: hue-rotate(-10deg) saturate(1.1);
+}
+
+.brand__text{
   font-weight: 700;
   letter-spacing: .08em;
   font-size: 13px;
