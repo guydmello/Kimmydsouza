@@ -6,6 +6,10 @@
   <title>Kimmy D’Souza</title>
   <meta name="description" content="Musical Theatre Performer" />
   <link rel="stylesheet" href="styles.css" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon.png">
 </head>
 
 <body>
@@ -13,8 +17,10 @@
 
   <header class="header">
     <div class="wrap header__inner">
-      <div class="brand">KIMMY D’SOUZA</div>
-
+      <div class="brand">
+        KIMMY D’SOUZA<br>
+        <span class="brand__pronouns">She/Her</span>
+      </div>
       <!-- Burger always visible -->
       <button class="burger" id="navBtn" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
         <span class="burger__box" aria-hidden="true">
@@ -27,25 +33,29 @@
 
     <!-- Collapsible menu panel (all resolutions) -->
     <nav class="navPanel" id="nav" aria-label="Primary">
-      <div class="wrap navPanel__inner">
-        <a href="#home">Home</a>
-        <a href="#headshot">Headshot &amp; Resume</a>
-        <a href="#about">About Me</a>
-        <a href="#featured">[FEATURED_PROJECT_TITLE]</a>
-        <a href="#tedx">TEDxTalk</a>
-        <a href="#reels">Performance Reels</a>
-        <a href="#follow">Follow Me</a>
-        <a href="#contact">Contact</a>
+      <div class="wrap navPanel__inner navStyled">
 
-        <div class="navPanel__divider"></div>
-
-        <div class="navPanel__social">
-          <a href="https://example.com/PLACEHOLDER_TIKTOK" target="_blank" rel="noreferrer">TikTok</a>
-          <a href="https://example.com/PLACEHOLDER_INSTAGRAM" target="_blank" rel="noreferrer">Instagram</a>
-          <a href="https://example.com/PLACEHOLDER_YOUTUBE" target="_blank" rel="noreferrer">YouTube</a>
+        <div class="navLinks">
+          <a href="#home">Home</a>
+          <a href="#headshot">Headshot &amp; Resume</a>
+          <a href="#about">About Me</a>
+          <a href="#reels">Performance Reels</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#follow">Follow Me</a>
+          <a href="#contact">Contact</a>
         </div>
+
+        <div class="navDivider"></div>
+
+        <div class="navSocial">
+          <a class="navSocialBtn social--instagram" href="https://www.instagram.com/kimmy.dsouza" target="_blank" rel="noreferrer" aria-label="Instagram"></a>
+          <a class="navSocialBtn social--facebook" href="https://www.facebook.com/share/1Rxv2Az2U2/" target="_blank" rel="noreferrer" aria-label="Facebook"></a>
+          <a class="navSocialBtn social--tiktok" href="https://www.tiktok.com/@kimmydsouza" target="_blank" rel="noreferrer" aria-label="TikTok"></a>
+        </div>
+
       </div>
     </nav>
+
 
     <!-- overlay -->
     <div class="navOverlay" id="navOverlay" hidden></div>
@@ -60,11 +70,11 @@
           KIMMY<br />
           D’SOUZA
         </h1>
-        <div class="hero__tag">MUSICAL THEATRE PERFORMER</div>
+        <div class="hero__tag"></div>
       </div>
 
         <div class="hero__img">
-          <img src="assets/headshot.png" alt="Hero image (placeholder)" loading="eager" />
+          <img src="assets/headshot_main.png" alt="Hero image (placeholder)" loading="eager" />
         </div>
       </div>
     </section>
@@ -98,26 +108,25 @@
       </div>
     </section>
 
-    <!-- Photo divider -->
+    <!-- Photo divider
     <section class="section section--image-divider" aria-label="Photo divider">
       <div class="wrap">
         <div class="divider-img">
           <img src="assets/about_photo.jpg" alt="Section divider image (placeholder)" loading="lazy" />
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- ABOUT -->
     <section class="section" id="about">
       <div class="wrap">
-        <div class="kicker">My Story</div>
         <h2 class="h2">ABOUT ME</h2>
 
         <div class="aboutGrid">
           <div class="prose">
-            <p>Kimmy D’Souza is a Toronto-based musical theatre performer with a deep love for storytelling through song, movement, and character. A graduate of the Bachelor of Music Theatre program offered jointly by St. Lawrence College and Queen’s University, she brings a strong foundation in performance alongside a thoughtful, collaborative approach to her work. Whether onstage or in rehearsal, Kimmy is driven by curiosity, empathy, and a commitment to creating work that feels honest and alive.</p>
-            <p>Alongside her performance career, Kimmy is passionate about arts education and community engagement. She has worked extensively with young performers, using theatre as a tool for confidence-building, self-expression, and joy. Her experience as an educator continues to shape her artistry, reinforcing her belief that theatre is not only about performance, but about connection — to one another, to story, and to the communities in which art is created.</p>
-            <p>At the heart of Kimmy’s work is a belief in the power of art as both escape and reflection. She is especially drawn to projects that center underrepresented voices and explore themes of identity, resilience, and belonging. Whether she’s performing, teaching, or creating new work, Kimmy strives to tell stories that resonate — stories that invite audiences in, spark imagination, and leave room for possibility.</p>
+            <p>Kimmy D’Souza is a South Asian & Canadian musical theatre performer, actor, singer, and dancer with a deep love for storytelling and human connection. A recent graduate of the SLC & Queen’s University Bachelor of Music Theatre program, she is passionate about continuing to grow, staying curious, and embracing every opportunity to learn through her work as an artist.</p>
+            <p>Alongside performing, Kimmy also works as a director and choreographer and is drawn to creative spaces that value collaboration, kindness, and character-driven storytelling. She believes theatre should feel joyful and meaningful, and that the best work happens when people feel safe to take risks and bring their full selves into the room. Outside of performing, Kimmy is also an arts educator at Young People’s Theatre, where she loves working with young artists and helping them build confidence, creativity, and a genuine love for the arts.</p>
+            <p>When she is not singing or dancing, Kimmy enjoys traveling, cooking, and spending time with her sweet senior dog, Tyson. She is endlessly grateful to her family, friends, and partner for their constant belief and support. Ready for whatever comes next, Kimmy looks forward to embracing new experiences with openness, joy, and a sense of adventure.</p>
 
             <a class="followlink" href="#follow">Follow Me!</a>
           </div>
@@ -129,7 +138,7 @@
       </div>
     </section>
 
-    <!-- FEATURED PROJECT -->
+    <!-- FEATURED PROJECT
     <section class="section" id="featured">
       <div class="wrap">
         <h2 class="h1like">[FEATURED_PROJECT_HEADING]</h2>
@@ -140,9 +149,9 @@
           </a>
         </p>
       </div>
-    </section>
+    </section> -->
 
-    <!-- TEDx -->
+    <!-- TEDx
     <section class="section" id="tedx">
       <div class="wrap">
         <h2 class="h1like">WATCH MY TEDxTALK:<br /><span class="quote">"[TEDX_TALK_TITLE]"</span></h2>
@@ -156,51 +165,80 @@
           ></iframe>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <!-- REELS -->
-    <section class="section" id="reels">
-      <div class="wrap">
-        <div class="kicker">My Life</div>
-        <h2 class="h2">PERFORMANCE REELS</h2>
+<!-- REELS -->
+<section class="section" id="reels">
+  <div class="wrap">
+    <h2 class="h2">PERFORMANCE REELS</h2>
 
-        <div class="reels" id="reelsGrid" aria-label="Performance reels grid">
-          <a class="reel card" href="https://example.com/PLACEHOLDER_REEL_1" target="_blank" rel="noreferrer">
-            <div class="reel__title">[REEL_TITLE_1]</div>
-            <div class="reel__meta">[REEL_META_1]</div>
-          </a>
+    <div class="reelsGrid">
 
-          <a class="reel card" href="https://example.com/PLACEHOLDER_REEL_2" target="_blank" rel="noreferrer">
-            <div class="reel__title">[REEL_TITLE_2]</div>
-            <div class="reel__meta">[REEL_META_2]</div>
-          </a>
-
-          <a class="reel card" href="https://example.com/PLACEHOLDER_REEL_3" target="_blank" rel="noreferrer">
-            <div class="reel__title">[REEL_TITLE_3]</div>
-            <div class="reel__meta">[REEL_META_3]</div>
-          </a>
-
-          <a class="reel card reel--hidden" href="https://example.com/PLACEHOLDER_REEL_4" target="_blank" rel="noreferrer">
-            <div class="reel__title">[REEL_TITLE_4]</div>
-            <div class="reel__meta">[REEL_META_4]</div>
-          </a>
-
-          <a class="reel card reel--hidden" href="https://example.com/PLACEHOLDER_REEL_5" target="_blank" rel="noreferrer">
-            <div class="reel__title">[REEL_TITLE_5]</div>
-            <div class="reel__meta">[REEL_META_5]</div>
-          </a>
-
-          <a class="reel card reel--hidden" href="https://example.com/PLACEHOLDER_REEL_6" target="_blank" rel="noreferrer">
-            <div class="reel__title">[REEL_TITLE_6]</div>
-            <div class="reel__meta">[REEL_META_6]</div>
-          </a>
-        </div>
-
-        <div class="center">
-          <button class="btn" id="loadMore" type="button">LOAD MORE</button>
-        </div>
+      <div class="reelThumb card" data-id="5Xe_C-1uB1E">
+        <img
+          src="https://img.youtube.com/vi/5Xe_C-1uB1E/hqdefault.jpg"
+          alt="Performance Reel"
+        />
+        <div class="reelPlay"></div>
       </div>
-    </section>
+      
+      <div class="reelThumb card" data-id="3MgiDk6ecHY">
+        <img
+          src="https://img.youtube.com/vi/3MgiDk6ecHY/hqdefault.jpg"
+          alt="Performance Reel 2"
+        />
+        <div class="reelPlay"></div>
+      </div>
+
+      <div class="reelThumb card" data-id="ZMLJ9ITGK0k">
+        <img
+          src="https://img.youtube.com/vi/ZMLJ9ITGK0k/hqdefault.jpg"
+          alt="Performance Reel 3"
+        />
+        <div class="reelPlay"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- GALLERY -->
+<section class="section" id="gallery">
+  <div class="wrap">
+    <h2 class="h2">GALLERY</h2>
+
+    <div class="galleryGrid" id="galleryGrid">
+      <!-- first 6 visible -->
+      <img src="assets/gallery/1.jpg" class="galleryItem" />
+      <img src="assets/gallery/2.jpg" class="galleryItem" />
+      <img src="assets/gallery/3.jpg" class="galleryItem" />
+      <img src="assets/gallery/4.jpg" class="galleryItem" />
+      <img src="assets/gallery/5.jpg" class="galleryItem" />
+      <img src="assets/gallery/6.jpg" class="galleryItem" />
+
+      <!-- hidden initially -->
+      <img src="assets/gallery/7.jpg" class="galleryItem hidden" />
+      <img src="assets/gallery/8.jpg" class="galleryItem hidden" />
+      <img src="assets/gallery/9.jpg" class="galleryItem hidden" />
+      <img src="assets/gallery/10.jpg" class="galleryItem hidden" />
+      <img src="assets/gallery/11.jpg" class="galleryItem hidden" />
+      <img src="assets/gallery/12.jpg" class="galleryItem hidden" />
+      <img src="assets/gallery/13.jpg" class="galleryItem hidden" />
+      <img src="assets/gallery/14.jpg" class="galleryItem hidden" />
+      <img src="assets/gallery/15.jpg" class="galleryItem hidden" />
+      <img src="assets/gallery/16.jpg" class="galleryItem hidden" />
+      <img src="assets/gallery/17.jpg" class="galleryItem hidden" />
+      <img src="assets/gallery/18.jpg" class="galleryItem hidden" />
+    </div>
+
+    <div class="center">
+      <button class="btn" id="loadMoreGallery" type="button">LOAD MORE</button>
+    </div>
+  </div>
+</section>
+
 
     <!-- FOLLOW -->
     <section class="section section--panel" id="follow">
@@ -208,21 +246,28 @@
         <h2 class="h2">FOLLOW ME!</h2>
 
         <div class="followcards">
-          <a class="card socialCard" href="https://example.com/PLACEHOLDER_INSTAGRAM" target="_blank" rel="noreferrer">
+          <a class="card socialCard social--instagram" href="https://www.instagram.com/kimmy.dsouza" target="_blank" rel="noreferrer">
+            <div class="socialIcon"></div>
             <div class="card__title">Instagram</div>
-            <div class="card__meta">[PLACEHOLDER_HANDLE]</div>
+            <div class="card__meta">@kimmy.dsouza</div>
           </a>
-          <a class="card socialCard" href="https://example.com/PLACEHOLDER_TIKTOK" target="_blank" rel="noreferrer">
+
+          <a class="card socialCard social--facebook" href="https://www.facebook.com/share/1Rxv2Az2U2/" target="_blank" rel="noreferrer">
+            <div class="socialIcon"></div>
+            <div class="card__title">Facebook</div>
+            <div class="card__meta">Kimmy D’Souza</div>
+          </a>
+
+          <a class="card socialCard social--tiktok" href="https://www.tiktok.com/@kimmydsouza" target="_blank" rel="noreferrer">
+            <div class="socialIcon"></div>
             <div class="card__title">TikTok</div>
-            <div class="card__meta">[PLACEHOLDER_HANDLE]</div>
-          </a>
-          <a class="card socialCard" href="https://example.com/PLACEHOLDER_YOUTUBE" target="_blank" rel="noreferrer">
-            <div class="card__title">YouTube</div>
-            <div class="card__meta">[PLACEHOLDER_CHANNEL]</div>
+            <div class="card__meta">@kimmydsouza</div>
           </a>
         </div>
 
-        <div class="contactblock">
+
+
+        <!-- <div class="contactblock">
           <div class="contactblock__col">
             <div class="contactblock__label">THEATRE/TV/FILM:</div>
             <div class="contactblock__text">
@@ -241,42 +286,54 @@
               <a href="mailto:DIGITAL_EMAIL_PLACEHOLDER">DIGITAL_EMAIL_PLACEHOLDER</a>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
 
     <!-- CONTACT -->
-    <section class="section" id="contact">
-      <div class="wrap">
-        <h2 class="h2">Contact Me!</h2>
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <div class="wrap">
+    <h2 class="h2">Contact Me!</h2>
 
-        <form class="form" action="https://formspree.io/f/FORM_ID_PLACEHOLDER" method="POST">
-          <div class="form__row">
-            <label>
-              <span>First Name</span>
-              <input name="firstName" placeholder="First Name" required />
-            </label>
-            <label>
-              <span>Last Name</span>
-              <input name="lastName" placeholder="Last Name" required />
-            </label>
-          </div>
+    <form
+      class="form"
+      id="contactForm"
+      action="https://formspree.io/f/xreeeqwv"
+      method="POST"
+    >
+      <!-- Optional: nicer email subject line in your inbox -->
+      <input type="hidden" name="_subject" value="New message from KimmyDSouza.com" />
 
-          <label>
-            <span>Email</span>
-            <input type="email" name="email" placeholder="Email" required />
-          </label>
-
-          <label>
-            <span>Message</span>
-            <textarea name="message" rows="6" placeholder="Message" required></textarea>
-          </label>
-
-          <button class="btn" type="submit">SEND</button>
-          <div class="form__thanks" id="thanks" hidden>Thanks for submitting!</div>
-        </form>
+      <div class="form__row">
+        <label>
+          <span>First Name</span>
+          <input name="firstName" placeholder="First Name" required />
+        </label>
+        <label>
+          <span>Last Name</span>
+          <input name="lastName" placeholder="Last Name" required />
+        </label>
       </div>
-    </section>
+
+      <label>
+        <span>Email</span>
+        <input type="email" name="email" placeholder="Email" required />
+      </label>
+
+      <label>
+        <span>Message</span>
+        <textarea name="message" rows="6" placeholder="Message" required></textarea>
+      </label>
+
+      <button class="btn" id="contactSubmit" type="submit">SEND</button>
+
+      <div class="form__thanks" id="thanks" hidden>Thanks for submitting!</div>
+    </form>
+  </div>
+</section>
+
+
   </main>
 
   <!-- Floating back-to-top button -->
